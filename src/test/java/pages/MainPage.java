@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
     private final SelenideElement
             upperMenu = $("li.nav-item"),
+            upperMenuList = $$("li.nav-item").findBy(text("Выставки")),
             logo = $("div.logo"),
             footerTitle = $("div.footer__title")
             ;
@@ -28,7 +29,7 @@ public class MainPage {
     }
 
     public MainPage checkUpperMenuFirstElement() {
-        upperMenu.shouldHave(text("Выставки"));
+        upperMenuList.shouldBe(Condition.exist);
         return this;
     }
 
