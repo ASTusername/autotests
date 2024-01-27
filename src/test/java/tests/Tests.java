@@ -39,7 +39,6 @@ public class Tests extends BaseTests {
 
     @Test
     @Tag("full")
-    @Tag("smoke")
     @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка наличия в футере заголовка")
     void testFooterSocialList() {
