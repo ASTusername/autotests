@@ -40,13 +40,13 @@ public class Tests extends BaseTests {
     @Test
     @Tag("smoke")
     @Owner("Aleksandr Trifonov")
-    @DisplayName("Проверка наличия в футере соц сетей")
+    @DisplayName("Проверка наличия в футере заголовка")
     void testFooterSocialList() {
         step("Открываем главную страницу сайта", () -> {
             mainPage.openPage();
         });
         step("Проверяем наличие первого элемента", () -> {
-            mainPage.checkFooterSocialList();
+            mainPage.checkFooterTitle();
         });
     }
 }

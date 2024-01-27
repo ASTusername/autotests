@@ -14,7 +14,7 @@ public class MainPage {
     private final SelenideElement
             upperMenu = $("li.nav-item"),
             logo = $("div.logo"),
-            vkLink = $("a[href='https://vk.com/tretyakovgallery/']")
+            footerTitle = $("div.footer__title")
             ;
 
     public MainPage openPage() {
@@ -32,8 +32,8 @@ public class MainPage {
         return this;
     }
 
-    public MainPage checkFooterSocialList() {
-        vkLink.shouldBe(exist);
-    return this;
+    public MainPage checkFooterTitle() {
+        footerTitle.shouldHave(text("Давайте дружить"));
+        return this;
     }
 }
