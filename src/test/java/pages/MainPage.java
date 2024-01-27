@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
     private final SelenideElement
-        //checkUpperMenu = $("[data-testid='nav-item']")
+        checkUpperMenu = $("[data-testid='nav-item']")
         //checkUpperMenu = $("[data-testid=nav-item]")
-    checkUpperMenu = $("h2._025a50318d--title--kzuwv")
+    //checkUpperMenu = $("h2._025a50318d--title--kzuwv")
                     ;
 
     public MainPage openPage() {
@@ -20,6 +20,7 @@ public class MainPage {
     }
     public MainPage checkUpperMenu() {
     //    checkUpperMenu.shouldHave(text("Аренда"));
+    //    checkUpperMenu.shouldBe(Condition.exist);
         checkUpperMenu.shouldBe(Condition.exist);
     //    check.shouldBe(Condition.exist);
         return this;
