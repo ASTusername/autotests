@@ -20,7 +20,7 @@ public class BaseTests {
         Configuration.browserSize = System.getProperty("resolution","1920x1080");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://www.cian.ru");
         Configuration.pageLoadStrategy = "eager";
-    /*    Configuration.remote = System.getProperty("wdSelenoid","https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("wdSelenoid","https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -29,7 +29,7 @@ public class BaseTests {
         ));
         Configuration.browserCapabilities = capabilities;
 
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());*/
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
