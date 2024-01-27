@@ -7,11 +7,11 @@ import pages.MainPage;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Тесты проверки главной страницы сайта")
-@Tag("full")
 public class Tests extends BaseTests {
     MainPage mainPage = new MainPage();
 
     @Test
+    @Tag("full")
     @Tag("smoke")
     @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка наличия верхнего меню")
@@ -38,6 +38,7 @@ public class Tests extends BaseTests {
     }
 
     @Test
+    @Tag("full")
     @Tag("smoke")
     @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка наличия в футере заголовка")
