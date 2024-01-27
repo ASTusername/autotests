@@ -23,18 +23,20 @@ public class Tests extends BaseTests {
             mainPage.checkUpperMenu();
         });
     }
+
     @Test
     @Tag("full")
     @Owner("Aleksandr Trifonov")
-    @DisplayName("Проверка количества пунктов верхнего меню")
+    @DisplayName("Проверка логотипа")
     void testUpperMenuQuantity() {
         step("Открываем главную страницу сайта", () -> {
             mainPage.openPage();
         });
         step("Проверяем наличие первого элемента", () -> {
-            mainPage.checkUpperMenuQuantity();
+            mainPage.checkLogo();
         });
     }
+
     @Test
     @Tag("smoke")
     @Owner("Aleksandr Trifonov")
