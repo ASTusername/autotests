@@ -12,7 +12,7 @@ public class Tests extends BaseTests {
 
     @Test
     @Tag("test")
-    @Owner("Aleksandr ЕкTrifonov")
+    @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка наличия верхнего меню")
     void testUpperMenuNotEmpty() {
         step("Открываем главную страницу сайта", () -> {

@@ -9,8 +9,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
     private final SelenideElement
-       checkUpperMenu = $("#geo-suggest-input")
-    //checkUpperMenu = $("[data-testid='nav-item']")
+    //   checkUpperMenu = $("#geo-suggest-input")
+    checkUpperMenu = $("li.nav-item")
         //checkUpperMenu = $("[data-testid=nav-item]")
     //checkUpperMenu = $("h2._025a50318d--title--kzuwv")
                     ;
