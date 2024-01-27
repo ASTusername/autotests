@@ -54,12 +54,12 @@ tasks.withType(Test) {
 
 task full_test(type: Test) {
     useJUnitPlatform {
-        includeTags("test")
+        includeTags("full")
     }
 }
 
-task simple_test(type: Test) {
+task smoke_test(type: Test) {
     useJUnitPlatform {
-        includeTags("simple")
+        includeTags("smoke")
     }
 }

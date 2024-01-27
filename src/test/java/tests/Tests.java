@@ -6,12 +6,13 @@ import pages.MainPage;
 
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Тесты проверки главной страницы сайта")
+@Tag("full")
 public class Tests extends BaseTests {
-
     MainPage mainPage = new MainPage();
 
     @Test
-    @Tag("test")
+    @Tag("smoke")
     @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка наличия верхнего меню")
     void testUpperMenuNotEmpty() {
@@ -20,6 +21,30 @@ public class Tests extends BaseTests {
         });
         step("Проверяем наличие первого элемента", () -> {
             mainPage.checkUpperMenu();
+        });
+    }
+    @Test
+    @Tag("full")
+    @Owner("Aleksandr Trifonov")
+    @DisplayName("Проверка количества пунктов верхнего меню")
+    void testUpperMenuQuantity() {
+        step("Открываем главную страницу сайта", () -> {
+            mainPage.openPage();
+        });
+        step("Проверяем наличие первого элемента", () -> {
+            mainPage.checkUpperMenuQuantity();
+        });
+    }
+    @Test
+    @Tag("smoke")
+    @Owner("Aleksandr Trifonov")
+    @DisplayName("Проверка наличия в футере соц сетей")
+    void testFooterSocialList() {
+        step("Открываем главную страницу сайта", () -> {
+            mainPage.openPage();
+        });
+        step("Проверяем наличие первого элемента", () -> {
+            mainPage.checkFooterSocialList();
         });
     }
 }
