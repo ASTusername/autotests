@@ -10,7 +10,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
     private final SelenideElement
         //checkUpperMenu = $("[data-testid='nav-item']")
-        checkUpperMenu = $("[data-testid=nav-item]")
+        //checkUpperMenu = $("[data-testid=nav-item]")
+    checkUpperMenu = $("h2._025a50318d--title--kzuwv")
                     ;
 
     public MainPage openPage() {
