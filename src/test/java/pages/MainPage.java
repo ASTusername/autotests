@@ -33,7 +33,7 @@ public class MainPage {
     }
 
     public MainPage checkFooterTitle() {
-        footerTitle.shouldHave(text("Давайте дружить"));
+        footerTitle.shouldHave(text("О музее"));
         return this;
     }
 }
