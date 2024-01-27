@@ -27,6 +27,11 @@ public class MainPage {
         return this;
     }
 
+    public MainPage checkUpperMenuFirstElement() {
+        upperMenu.shouldHave(text("Выставки"));
+        return this;
+    }
+
     public MainPage checkLogo() {
         logo.shouldBe(Condition.exist);
         return this;

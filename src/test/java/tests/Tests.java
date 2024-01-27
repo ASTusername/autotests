@@ -24,16 +24,29 @@ public class Tests extends BaseTests {
         });
     }
 
+    @Test
+    @Tag("full")
+    @Owner("Aleksandr Trifonov")
+    @DisplayName("Проверка первого элемента верхнего меню")
+    void testUpperMenuFirstElement() {
+        step("Открываем главную страницу сайта", () -> {
+            mainPage.openPage();
+        });
+        step("Проверяем значение первого элемента", () -> {
+            mainPage.checkUpperMenuFirstElement();
+        });
+    }
+
 
     @Test
     @Tag("full")
     @Owner("Aleksandr Trifonov")
     @DisplayName("Проверка логотипа")
-    void testUpperMenuQuantity() {
+    void testLogo() {
         step("Открываем главную страницу сайта", () -> {
             mainPage.openPage();
         });
-        step("Проверяем наличие первого элемента", () -> {
+        step("Проверяем наличие логотипа", () -> {
             mainPage.checkLogo();
         });
     }
@@ -46,7 +59,7 @@ public class Tests extends BaseTests {
         step("Открываем главную страницу сайта", () -> {
             mainPage.openPage();
         });
-        step("Проверяем наличие первого элемента", () -> {
+        step("Проверяем значение заголовка", () -> {
             mainPage.checkFooterTitle();
         });
     }
