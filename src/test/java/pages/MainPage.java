@@ -13,8 +13,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
     private final SelenideElement
             upperMenu = $("li.nav-item"),
-            logo = $("a.logo-link nuxt-link-active"),
-            vkLink = $("a[href=https://vk.com/tretyakovgallery]")
+            logo = $("div.logo"),
+            vkLink = $("a[href='https://vk.com/tretyakovgallery/']")
             ;
 
     public MainPage openPage() {
