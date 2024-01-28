@@ -11,7 +11,6 @@
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 * <a href="#jira">Интеграция с Jira</a>
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
-* <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
 
 ____
 <a id="tools"></a>
@@ -86,8 +85,3 @@ ____
 <p align="center">  
 <img title="Allure Overview Dashboard" src="src/media/screenshots/telegram.png">  
 </p>
-
-<a id="video"></a>
-## <img src="src/media/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> Примеры видео выполнения тестов на Selenoid
-
-<video src="src/media/screenshots/video.mp4" width="650"></video>  
