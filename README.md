@@ -90,4 +90,4 @@ ____
 <a id="video"></a>
 ## <img src="src/media/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> Примеры видео выполнения тестов на Selenoid
 
-<video title="Selenoid Video" src="src/media/screenshots/Video.gif" width="650" height="350"  alt="video">  
+<video src="src/media/screenshots/video.mp4" width="650"></video>  
