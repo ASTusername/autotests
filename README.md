@@ -58,7 +58,7 @@ ____
 </p>  
 
 <a id="allure-testops"></a>
-## <img src="src/media/logo/allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4003/dashboards">Allure TestOps</a>
+## <img src="src/media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4003/dashboards">Allure TestOps</a>
 ### *Allure TestOps*
 
 <p align="center">  

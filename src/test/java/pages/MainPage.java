@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
     private final SelenideElement
             upperMenu = $("li.nav-item"),
+            centerTitle = $$("h2").findBy(text("Выставки")),
             upperMenuList = $$("li.nav-item").findBy(text("Выставки")),
             logo = $("div.logo"),
             footerTitle = $("div.footer__title")
@@ -40,6 +41,11 @@ public class MainPage {
 
     public MainPage checkFooterTitle() {
         footerTitle.shouldHave(text("О музее"));
+        return this;
+    }
+
+    public MainPage checkCenterTitle() {
+        centerTitle.shouldBe(Condition.exist);
         return this;
     }
 }
