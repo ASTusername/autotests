@@ -12,8 +12,6 @@ public class Tests extends BaseTests {
     MainPage mainPage = new MainPage();
 
     @Test
-    @Tag("regress")
-    @Tag("smoke")
     @DisplayName("Проверка наличия верхнего меню")
     void testUpperMenuNotEmpty() {
         step("Открываем главную страницу сайта", () -> {
@@ -25,7 +23,6 @@ public class Tests extends BaseTests {
     }
 
     @Test
-    @Tag("regress")
     @DisplayName("Проверка первого элемента верхнего меню")
     void testUpperMenuFirstElement() {
         step("Открываем главную страницу сайта", () -> {
@@ -38,7 +35,6 @@ public class Tests extends BaseTests {
 
 
     @Test
-    @Tag("regress")
     @DisplayName("Проверка логотипа")
     void testLogo() {
         step("Открываем главную страницу сайта", () -> {
@@ -50,7 +46,6 @@ public class Tests extends BaseTests {
     }
 
     @Test
-    @Tag("regress")
     @DisplayName("Проверка наличия в футере заголовка")
     void testFooterSocialList() {
         step("Открываем главную страницу сайта", () -> {
@@ -62,7 +57,6 @@ public class Tests extends BaseTests {
     }
 
     @Test
-    @Tag("smoke")
     @DisplayName("Проверка заголовка в середине")
     void testTitle() {
         step("Открываем главную страницу сайта", () -> {
