@@ -52,14 +52,19 @@ tasks.withType(Test) {
     }
 }
 
-task full_test(type: Test) {
+task regress_test(type: Test) {
     useJUnitPlatform {
-        includeTags("full")
+        includeTags("regress")
     }
 }
 
 task smoke_test(type: Test) {
     useJUnitPlatform {
         includeTags("smoke")
+    }
+}
+
+task full_test(type: Test) {
+    useJUnitPlatform {
     }
 }
