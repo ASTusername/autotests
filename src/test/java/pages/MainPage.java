@@ -1,12 +1,9 @@
 package pages;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.CollectionCondition.*;
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -16,8 +13,7 @@ public class MainPage {
             centerTitle = $$("h2").findBy(text("Выставки")),
             upperMenuList = $$("li.nav-item").findBy(text("Выставки")),
             logo = $("div.logo"),
-            footerTitle = $("div.footer__title")
-            ;
+            footerTitle = $("div.footer__title");
 
     public MainPage openPage() {
         open(baseUrl);
