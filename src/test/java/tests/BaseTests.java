@@ -1,18 +1,14 @@
 package tests;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.ConfigReader;
 import config.ProjectConfiguration;
 import config.web.WebConfig;
 import helpers.Attach;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import io.qameta.allure.selenide.AllureSelenide;
-
-import java.util.Map;
 
 public class BaseTests {
     private static final WebConfig webConfig = ConfigReader.Instance.read();
